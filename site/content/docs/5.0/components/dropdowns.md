@@ -26,10 +26,76 @@ Wrap the dropdown's toggle (your button or link) and the dropdown menu within `.
 
 ### Hover dropdown
 
+<div class="bd-example-primary-container">
+  {{< example >}}
+    <div class="hover-dropdown">
+      <a href="" class="hover-dropdown__link">
+        <span class="hover-dropdown__text text-white">Studijos<span>
+        <ul class="hover-dropdown__list list-unstyled" aria-labelledby="hover-dropdown-list">
+          <li class="hover-dropdown__list__item">
+            <a class="hover-dropdown__list__item__link" href="#">Stojantiesiems</a>
+          </li>
+          <li class="hover-dropdown__list__item">
+            <a class="hover-dropdown__list__item__link" href="#">Studentams</a>
+          </li>
+          <li class="hover-dropdown__list__item">
+            <a class="hover-dropdown__list__item__link" href="#">Doktorantams</a>
+          </li>
+          <li class="hover-dropdown__list__item">
+            <a class="hover-dropdown__list__item__link" href="#">Rezidentams</a>
+          </li>
+          <li class="hover-dropdown__list__item">
+            <a class="hover-dropdown__list__item__link" href="#">Studijų kokybė</a>
+          </li>
+          <li class="hover-dropdown__list__item">
+            <a class="hover-dropdown__list__item__link" href="#">Mokymasis visą gyvenimą</a>
+          </li>
+        </ul>
+      </a>
+    </div>
+  {{< /example >}}
+</div>
+
+### Hover dropdown active state
+
+<div class="bd-example-primary-container">
+  {{< example >}}
+    <div class="hover-dropdown hover-dropdown--active">
+      <a href="" class="hover-dropdown__link">
+        <span class="hover-dropdown__text text-white">Studijos<span>
+        <ul class="hover-dropdown__list list-unstyled" aria-labelledby="hover-dropdown-list">
+          <li class="hover-dropdown__list__item">
+            <a class="hover-dropdown__list__item__link" href="#">Stojantiesiems</a>
+          </li>
+          <li class="hover-dropdown__list__item">
+            <a class="hover-dropdown__list__item__link" href="#">Studentams</a>
+          </li>
+          <li class="hover-dropdown__list__item">
+            <a class="hover-dropdown__list__item__link" href="#">Doktorantams</a>
+          </li>
+          <li class="hover-dropdown__list__item">
+            <a class="hover-dropdown__list__item__link" href="#">Rezidentams</a>
+          </li>
+          <li class="hover-dropdown__list__item">
+            <a class="hover-dropdown__list__item__link" href="#">Studijų kokybė</a>
+          </li>
+          <li class="hover-dropdown__list__item">
+            <a class="hover-dropdown__list__item__link" href="#">Mokymasis visą gyvenimą</a>
+          </li>
+        </ul>
+      </a>
+    </div>
+  {{< /example >}}
+</div>
+
+### Single button
+
+Any single `.btn` can be turned into a dropdown toggle with some markup changes. Here's how you can put them to work with either `<button>` elements:
+
 {{< example >}}
   <div class="dropdown">
-    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-      Hover dropdown
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+      Dropdown button
     </button>
     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
       <li><a class="dropdown-item" href="#">Action</a></li>
@@ -37,23 +103,6 @@ Wrap the dropdown's toggle (your button or link) and the dropdown menu within `.
       <li><a class="dropdown-item" href="#">Something else here</a></li>
     </ul>
   </div>
-{{< /example >}}
-
-### Single button
-
-Any single `.btn` can be turned into a dropdown toggle with some markup changes. Here's how you can put them to work with either `<button>` elements:
-
-{{< example >}}
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-    Dropdown button
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-  </ul>
-</div>
 {{< /example >}}
 
 And with `<a>` elements:
