@@ -3,7 +3,7 @@
 
   @include media-breakpoint-up(md) {
     position: sticky;
-    top: 5rem;
+    top: 10px;
     // Override collapse behaviors
     // stylelint-disable-next-line declaration-no-important
     display: block !important;
